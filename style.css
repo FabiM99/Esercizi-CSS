@@ -1,55 +1,34 @@
-body {
-  color: lightslategray;
+p:first-of-type::first-letter {
+	float: left;
+	color: darkred;
+	border: 3px ridge darkgoldenrod;
+	padding: 16px;
+	background-color: gold;
+	margin: 8px;
 }
 
-blockquote {
-  background-color: rgba(0, 12, 24, 0.05);
-  border: 1px solid black
+blockquote::before {
+	content: "“";
+	background-color: rgba(0, 0, 0, 0.12);
+	padding: 8px;
+}
+
+blockquote::after {
+	content: "”";
+	background-color: rgba(0, 0, 0, 0.12);
+	padding: 8px;
 }
 
 a {
-  border: 1px dashed red;
+
+	color: darkred;
+	text-decoration: none;
 }
 
-em {
-  color: darkred;
+a:hover {
+	color: green;
 }
 
-.variant-em {
-  background-color: greenyellow;
-  color: black;
-  font-weight: bold;
-  font-style: inherit;
-
+a:visited {
+	color: violet;
 }
-
-ul {
-  background-color: unset;
-}
-
-ul li {
-  padding: 16px;
-  color: red
-}
-
-.link1 a {
-  padding: inherit;
-  color: inherit;
-  
-}
-
-.link2 a {
-  padding: initial;
-  color: initial;
-}
-
-
-.link3 a {
-  padding: unset;
-  color: unset;
-}
-
-.content1 p {
-  border: 1px solid black;
-}
-
